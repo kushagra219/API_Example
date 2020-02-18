@@ -8,6 +8,6 @@ router.register('paradigm', views.ParadigmView)
 router.register('programmer', views.ProgrammerView)
 
 urlpatterns = [
-    #path('', admin.site.urls),
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('api-auth',include('rest_framework.urls'))
 ]
